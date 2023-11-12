@@ -1,4 +1,31 @@
 # How to start the project
+
+- import Flask
+- Create its instance
+- pass condition instance = run(debug=True)
+- Creating route()
+  - Pass a function which performs certain action
+  - render_templates()
+  - pass the data Dict
+
+
+- To send the data from back end into front end
+  - {{dict_name.key_name}}
+
+
+- To sent data from front end into back end
+
+
+
+
+
+
+
+
+
+
+
+
 Project Plan:
 
 Project Main Folder:

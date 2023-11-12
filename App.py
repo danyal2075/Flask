@@ -5,7 +5,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    name = input('Please Enter Your Name')
+    
+    return render_template('home.html', data = {'name':name})
 
 @app.route('/About')
 def about():
