@@ -14,7 +14,15 @@
 
 
 - To sent data from front end into back end
+  - sending data from one page into another
+  
+  - Method[POST , GET]
+    - POST: is use to send data
+      - So i need to pass it in the form
+    - GET: is used to receive data
+  - request() : from where want to get the value
 
+  - Note: Check the commit what are changed. How it is implemented
 
 
 
