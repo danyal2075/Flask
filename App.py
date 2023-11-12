@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello Python with Flask'
+    return render_template('home.html')
 
 @app.route('/About')
 def about():
-    return('<h>This is my about section</h>')
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
