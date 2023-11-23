@@ -25,10 +25,11 @@
   - Note: Check the commit what are changed. How it is implemented
 
 - jsonify
-  - 
+  - use to pass the data in Dict format
 
 
-
+- App2.py:
+  - Jinja Formatting is used
 
 
 
@@ -46,3 +47,7 @@ Project Main Folder:
   - README.md
   - and all other supporting files
 - venv folder
+
+
+Creating conda env 
+  conda create -p (envname) 
