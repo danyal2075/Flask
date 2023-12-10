@@ -8,16 +8,16 @@ data = []
 @app.route('/', methods = ['GET','POST'])
 def home():
     if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        roll = request.form['rollnumber']
-        course = request.form['course']
+        name = request.json['name']
+        email = request.json['email']
+        roll = request.json['rollnumber']
+        course = request.json['course']
 
-        record1 = {'name':name,'email':email,'rollnumber':roll,'Course':course} 
+        record1 = {'name':name,'email':email,'rollnumber':roll,'course':course} 
         data.append(record1)
 
         # return render_template('home1.html', data = 'Successfully Added Data')
-    return render_template('home1.html', message = 'Success')
+    # return render_template('home1.html', message = 'Success')
 
   
 
@@ -26,7 +26,7 @@ def home():
 
 @app.route('/about', methods =['GET','POST'])
 def about():
-    return render_template('about1.html', data = data)
+    return jsonify(data) 
 
 
 if __name__ == '__main__':
