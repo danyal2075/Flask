@@ -31,7 +31,9 @@
 - App2.py:
   - Jinja Formatting is used
 
-
+- dbapi.py:
+  - Contains database connection
+  - Syntax 
 
 
 
